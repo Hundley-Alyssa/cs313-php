@@ -1,0 +1,15 @@
+#one{
+	background-color: red;
+	font-size: 40px;
+}
+div:hover{
+	font-weight: bold;
+}
+#two{
+	background-color: blue;
+	font-size: 20px;
+}
+#three{
+	background-color: green;
+	font-size: 50px;
+}
