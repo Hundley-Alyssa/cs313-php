@@ -1,0 +1,157 @@
+body {
+    width: 100%;
+    min-width: 870px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 800px;
+}
+
+header {
+    height: 155px;
+    background-color: #cecbcc;
+    margin-top: -80px;
+}
+#headerP{
+    padding-top: 30px;
+    color: white;
+    font-size: 5em;
+    margin-left: 300px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+main {
+    background-color: white;
+    margin-left: 250px;
+    min-height: 500px;
+}
+
+.sideNav {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    overflow-x: hidden;
+    background-color: #cecbcc;
+    padding-top: 40px;
+
+}
+
+.sideNav li {
+    border: solid white 2px;
+    margin: 8px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    list-style-type: none;
+    margin-left: -30px;
+
+
+}
+
+.sideNav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+
+}
+
+#practice {}
+
+a:link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+
+}
+
+li:visited {
+    background-color: #a4a1a1;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #f7acbd;
+    text-decoration: none;
+}
+
+a:active {
+    background-color: #ef4266;
+    text-decoration: none;
+}
+
+#homeContent {
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+#about {
+    border-top: solid #ef4266 10px;
+    border-bottom: solid #ef4266 10px;
+    margin-top: 20px;
+    color: #a4a1a1;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    display: inline-block;
+}
+
+#about figure img {
+    width: 80%;
+
+}
+
+#about figure {
+    float: left;
+    width: 40%;
+}
+
+#about figcaption {
+    font-family: 'Oranienbaum', serif;
+    font-size: 50px;
+    background-color: #f7acbd;
+    color: white;
+    text-align: center;
+
+}
+
+#about p {
+    width: 45%;
+    float: right;
+    padding-right: 40px;
+    font-size: 20px;
+}
+
+
+
+footer {
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #f7acbd;
+    color: white;
+    position: relative;
+    margin-bottom: -10px
+}
+
+.bottomNav {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.bottomNav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.bottomNav a {}
+
+#footerCopy {
+    text-align: center;
+}
