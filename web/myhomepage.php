@@ -15,7 +15,7 @@
 
     
               
-     <?php include 'header.php'; ?>
+     <!-- <?php include 'header.php';?> -->
 
 
 
@@ -61,7 +61,7 @@
 
     <footer>
         
-        <?php include 'footer.php'; ?>
+        <!-- <?php include 'footer.php';?> -->
         
     </footer>
 
