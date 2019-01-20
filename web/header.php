@@ -1,6 +1,7 @@
-<?php
-echo "<header><p id="headerP">CS-313</p></header>";
-?>
+<header>
+	<p id="headerP">CS-313</p>
+</header>
+
 
 
 
