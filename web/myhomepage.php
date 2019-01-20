@@ -26,7 +26,7 @@
 
             <nav class="sideNav">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="myhomepage.php">HOME</a></li>
                     <li><a href="assignments.php">ASSIGNMENTS</a></li>
                     
                 </ul>
