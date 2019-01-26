@@ -35,7 +35,7 @@
 
         <div id="assignments">
 
-        	<button a href="shoppingcart.php">Shopping Cart</button>
+        	<a href="shoppingcart.php">Shopping Cart</a>
 
         	
 
