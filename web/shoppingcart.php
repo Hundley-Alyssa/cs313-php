@@ -32,6 +32,24 @@ session_start();
 
         <p>As a member of Recipétit, you have the exclusive opportunity to order baked goods from Lo's Kitchen. The order includes her one-of-a-kind recipes that can ONLY be purchased here!</p>
 
+
+
+        <?php 
+        $products = array("Chocolate Dream Cake", "Luscious Lemon Cake", "Chocolate Raspberry Love Cake", "Birthday Suit Cake");
+        $amounts = array("45", "45", "50", "50");
+
+        if ( !isset($_SESSION["total"]) ) {
+
+            $_SESSION["total"] = 0;
+
+        for ($i=0; $i< count($products); $i++) {
+            $_SESSION["qty"][$i] = 0;
+            $_SESSION["amounts"][$i] = 0;
+            }
+        }
+
+        ?>
+
         <div id="items">
             <figure>
                 <img src="chocolate_cake.jpg" alt="Chocolate cake" title="Chocolate cake" />

@@ -37,7 +37,7 @@ $_SESSION['zipcode'] = $_POST['zipcode'];
         
        <?php
 
-            echo "Shipping to: " . $_SESSION["address"] . "<br>";
+            echo "Shipping to: <br>" . $_SESSION["address"] . "<br>";
             echo $_SESSION["city"] . ", "; 
             echo $_SESSION["state"] . " ";
             echo $_SESSION["zipcode"];
