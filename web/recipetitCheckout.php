@@ -1,6 +1,4 @@
 
-
-<!-- <?php session_start(); ?> -->
 <!DOCTYPE html>
 
 <html lang="en">
@@ -51,14 +49,7 @@
             </form> 
 
 
-            <!-- <?php 
-
-            $_SESSION['address] = $_POST['address'];
-            $_SESSION['address] = $_POST['city'];
-            $_SESSION['address] = $_POST['state'];
-            $_SESSION['address] = $_POST['zipcode'];
-
-             ?> -->
+           
             
         	
 
