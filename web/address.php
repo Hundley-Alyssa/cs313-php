@@ -1,5 +1,7 @@
 <?php
 session_start();
-?>
 
-<?php print_r($_SESSION); ?>
+
+$_SESSION['address'] = $_POST['address']
+
+print_r($_SESSION); ?>
