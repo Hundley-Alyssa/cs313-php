@@ -14,7 +14,7 @@
 <body>
 
     
-     <?php include ("header.php"); ?>         
+     <?php include ("recipetitheader.php"); ?>         
 
 
 
@@ -24,13 +24,7 @@
     <main>
         <div>
 
-            <nav class="sideNav">
-                <ul>
-                    <li><a href="myhomepage.php">HOME</a></li>
-                    <li><a href="assignments.php">ASSIGNMENTS</a></li>
-                    
-                </ul>
-            </nav>
+            <?php include ("recipetitnav.php"); ?> 
         </div>
 
 
@@ -93,7 +87,7 @@
 
     <footer>
 
-        <?php include ("footer.php"); ?> 
+        <?php include ("recipetitfooter.php"); ?> 
           
     </footer>
 
