@@ -31,7 +31,7 @@
 
 
 
-            <form action="/recipetitConfirmation.php" method="post">
+            <form action="/address.php" method="post">
                 Street Address:<br>
                 <input type="text" name="address" value="123 E Example St">
                 <br>
@@ -44,7 +44,7 @@
                 Zipcode: <br>
                 <input type="text" name="zipcode" value="123456">
                 <br><br>
-                <input type="submit" value="Checkout">
+                <input type="submit" value="Checkout" class="button_active" onclick="location.href='recipetitConfirmation.php';">
             </form> 
             
         	
