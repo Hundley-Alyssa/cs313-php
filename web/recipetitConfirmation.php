@@ -33,13 +33,15 @@ $_SESSION['zipcode'] = $_POST['zipcode'];
             <?php include ("recipetitnav.php"); ?> 
         </div>
 
-        <p>Shipping to:</p>
+      
         
        <?php
 
-    echo "Favorite color is " . $_SESSION["address"] . ".<br>";
-    echo "Favorite animal is " . $_SESSION["city"] . ".";
-?>
+            echo "Shipping to: " . $_SESSION["address"] . "<br>";
+            echo $_SESSION["city"];
+            echo $_SESSION["state"];
+            echo $_SESSION["zipcode"];
+        ?>
         
 
 
