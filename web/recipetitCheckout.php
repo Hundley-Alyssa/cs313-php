@@ -44,8 +44,18 @@
                 Zipcode: <br>
                 <input type="text" name="zipcode" value="123456">
                 <br><br>
-                <input type="submit" value="Checkout" class="button_active" onclick="location.href='recipetitConfirmation.php';">
+                <input type="submit" value="Checkout">
             </form> 
+
+
+            <?php 
+
+            $_SESSION['address] = $_POST['address'];
+            $_SESSION['address] = $_POST['city'];
+            $_SESSION['address] = $_POST['state'];
+            $_SESSION['address] = $_POST['zipcode'];
+
+             ?>
             
         	
 

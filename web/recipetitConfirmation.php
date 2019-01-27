@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -27,7 +29,7 @@
     
             
 
-        Shipping to: <?php echo $_POST["address"]; <br> echo $_POST["city"]; <p>, </p> echo $_POST["state"]; <p> </p> echo $_POST["zipcode"];?> 
+        Shipping to: <?php echo $_SESSION["address"]; <br> echo $_SESSION["city"]; <p>, </p> echo $_SESSION"state"]; <p> </p> echo $_SESSION["zipcode"];?> 
         
 
         	
