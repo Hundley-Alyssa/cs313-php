@@ -35,6 +35,8 @@
 
         </div>
 
+        <button>Continue to Checkout</button>
+
 
     </main>
 
