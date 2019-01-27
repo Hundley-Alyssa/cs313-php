@@ -28,9 +28,10 @@
 
         <p>As a member of Recipétit, you have the exclusive opportunity to order baked goods from Lo's Kitchen. The order includes her one-of-a-kind recipes that can ONLY be purchased here!</p>
 
-        
-       
-
+   <?php     
+if ( isset($_SESSION["cart"]) ) {
+ ?>
+ <br/><br/><br/>
  <h2>Cart</h2>
  <table>
  <tr>
@@ -67,6 +68,8 @@
  <?php
  }
  ?>
+
+ 
 
         <button>Continue to Checkout</button>
 
