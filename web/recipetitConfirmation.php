@@ -24,13 +24,14 @@
         </div>
 
 
-        <p>As a member of Recipétit, you have the exclusive opportunity to order baked goods from Lo's Kitchen. The order includes her one-of-a-kind recipes that can ONLY be purchased here!</p>
-
-        <div id="items">
+    
             
 
-        	
+        Shipping to: <?php echo $_POST["address"]; <br> echo $_POST["city"]; <p>, </p> echo $_POST["state"]; <p> </p> echo $_POST["zipcode"];?> 
+        
 
+        	
+        <div id="items">
 
         </div>
 

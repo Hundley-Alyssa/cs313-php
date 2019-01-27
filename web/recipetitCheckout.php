@@ -28,12 +28,16 @@
 
         <div id="items">
 
-            <form action="/action_page.php">
+
+
+
+            <form action="/address.php" method="post">
                 Street Address:<br>
                 <input type="text" name="address" value="123 E Example St">
                 <br>
                 City: <br>
                 <input type="text" name="city" value="Tasty">
+                <br>
                 State:<br>
                 <input type="text" name="state" value="Alabama">
                 <br>
