@@ -48,7 +48,64 @@ session_start();
             }
         }
 
-        ?>
+        if ( isset($_GET['reset']) )
+   {
+    if ($_GET["reset"] == 'true')
+    {
+     unset($_SESSION["qty"]); //The quantity for each product
+     unset($_SESSION["amounts"]); //The amount from each product
+     unset($_SESSION["total"]); //The total cost
+     unset($_SESSION["cart"]); //Which item has been chosen
+   }
+}
+
+if ( isset($_GET["add"]) )
+{
+$i = $_GET["add"];
+
+$qty = $_SESSION["qty"][$i] + 1;
+
+$_SESSION["amounts"][$i] = $amounts[$i] * $qty;
+$_SESSION["cart"][$i] = $i;
+$_SESSION["qty"][$i] = $qty;
+}
+
+if ( isset($_GET["delete"]) )
+ {
+   $i = $_GET["delete"];
+   $qty = $_SESSION["qty"][$i];
+   $qty--;
+   $_SESSION["qty"][$i] = $qty;
+
+ //remove item if quantity is zero
+ if ($qty == 0) {
+   $_SESSION["amounts"][$i] = 0;
+   unset($_SESSION["cart"][$i]);
+ }
+ else
+ {
+   $_SESSION["amounts"][$i] = $amounts[$i] * $qty;
+ }
+ }
+?>
+
+
+<?php
+ for ($i=0; $i< count($products); $i++) {
+   ?>
+   <tr>
+   <td><?php echo($products[$i]); ?></td>
+   <td width="10px">&nbsp;</td>
+   <td><?php echo($amounts[$i]); ?></td>
+   <td width="10px">&nbsp;</td>
+   <td><a href="?add=<?php echo($i); ?>">Add to cart</a></td>
+   </tr>
+   <?php
+ }
+ ?>
+
+
+   
 
         <div id="items">
             <figure>
