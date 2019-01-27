@@ -34,7 +34,7 @@ session_start();
 
 
 
-            <form action="/address.php" method="post">
+            <form action="/recipetitConfirmation.php" method="post">
                 Street Address:<br>
                 <input type="text" name="address" value="123 E Example St">
                 <br>

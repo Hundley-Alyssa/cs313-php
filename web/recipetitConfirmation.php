@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+$_SESSION['address'] = $_POST['address'];
+$_SESSION['city'] = $_POST['city'];
+$_SESSION['state'] = $_POST['state'];
+$_SESSION['zipcode'] = $_POST['zipcode'];
+
 ?>
 
 <!DOCTYPE html>
