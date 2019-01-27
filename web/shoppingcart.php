@@ -10,7 +10,7 @@ session_start();
 
 <head>
 
-    <title>CS 313 | HOME</title>
+    <title>CS 313 | SHOPPING</title>
     <meta charset="utf-8" />
     <link href="myhome.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -61,23 +61,7 @@ $_SESSION["cart"][$i] = $i;
 $_SESSION["qty"][$i] = $qty;
 }
 
-if ( isset($_GET["delete"]) )
- {
-   $i = $_GET["delete"];
-   $qty = $_SESSION["qty"][$i];
-   $qty--;
-   $_SESSION["qty"][$i] = $qty;
 
- //remove item if quantity is zero
- if ($qty == 0) {
-   $_SESSION["amounts"][$i] = 0;
-   unset($_SESSION["cart"][$i]);
- }
- else
- {
-   $_SESSION["amounts"][$i] = $amounts[$i] * $qty;
- }
- }
 ?>
 
 
@@ -103,12 +87,20 @@ if ( isset($_GET["delete"]) )
                 <img src="chocolate_cake.jpg" alt="Chocolate cake" title="Chocolate cake" />
 
                 <figcaption>
-                    Chocolate Dream Cake - $45
+                    <?php 
+
+                    echo($products[$i]) . " - ";
+                    echo($amounts[$i]); 
+                    ?>
+
+                    <button><a href="?add=<?php echo($i); ?>">Add to cart</a></button>
+
+
 
                 </figcaption>
 
 
-                <button>Add to cart</button>
+            
 
             </figure>
 
