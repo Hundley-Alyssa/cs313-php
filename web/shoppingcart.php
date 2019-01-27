@@ -48,16 +48,7 @@ session_start();
             }
         }
 
-        if ( isset($_GET['reset']) )
-   {
-    if ($_GET["reset"] == 'true')
-    {
-     unset($_SESSION["qty"]); //The quantity for each product
-     unset($_SESSION["amounts"]); //The amount from each product
-     unset($_SESSION["total"]); //The total cost
-     unset($_SESSION["cart"]); //Which item has been chosen
-   }
-}
+    
 
 if ( isset($_GET["add"]) )
 {
@@ -105,7 +96,7 @@ if ( isset($_GET["delete"]) )
  ?>
 
 
-   
+
 
         <div id="items">
             <figure>
