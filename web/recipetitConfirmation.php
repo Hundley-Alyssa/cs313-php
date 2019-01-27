@@ -34,14 +34,19 @@ $_SESSION['zipcode'] = $_POST['zipcode'];
         </div>
 
         <p>Shipping to:</p>
-        <?php echo $_SESSION['address']; ?>
+        
+       <?php
+
+    echo "Favorite color is " . $_SESSION["address"] . ".<br>";
+    echo "Favorite animal is " . $_SESSION["city"] . ".";
+?>
         
 
 
         
             
 
-        <!-- Shipping to: <?php echo $_SESSION["address"]; <br> echo $_SESSION["city"]; <p>, </p> echo $_SESSION"state"]; <p> </p> echo $_SESSION["zipcode"];?>  -->
+ 
         
 
         	
