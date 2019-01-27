@@ -69,9 +69,9 @@ $_SESSION["qty"][$i] = $qty;
  for ($i=0; $i< count($products); $i++) {
    ?>
    <tr>
-   <td><?php echo($products[$i]); ?></td>
+   <td></td>
    <td width="10px">&nbsp;</td>
-   <td><?php echo($amounts[$i]); ?></td>
+   <td></td>
    <td width="10px">&nbsp;</td>
    <td><a href="?add=<?php echo($i); ?>">Add to cart</a></td>
    </tr>
@@ -87,11 +87,12 @@ $_SESSION["qty"][$i] = $qty;
                 <img src="chocolate_cake.jpg" alt="Chocolate cake" title="Chocolate cake" />
 
                 <figcaption>
-                    <?php 
 
-                    echo($products[$i]) . " - ";
-                    echo($amounts[$i]); 
-                    ?>
+
+                    <?php echo($products[$i]); ?>
+                    <?php echo($amounts[$i]); ?>
+
+                
 
                     <button><a href="?add=<?php echo($i); ?>">Add to cart</a></button>
 
