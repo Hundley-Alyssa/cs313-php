@@ -29,27 +29,7 @@
         <p>As a member of Recipétit, you have the exclusive opportunity to order baked goods from Lo's Kitchen. The order includes her one-of-a-kind recipes that can ONLY be purchased here!</p>
 
         
-        <!-- <?php
-
-            if ( isset($_GET["delete"]) )
- {
-   $i = $_GET["delete"];
-   $qty = $_SESSION["qty"][$i];
-   $qty--;
-   $_SESSION["qty"][$i] = $qty;
-
- //remove item if quantity is zero
- if ($qty == 0) {
-   $_SESSION["amounts"][$i] = 0;
-   unset($_SESSION["cart"][$i]);
- }
- else
- {
-   $_SESSION["amounts"][$i] = $amounts[$i] * $qty;
- }
- }
-
- ?> -->
+       
 
  <h2>Cart</h2>
  <table>
