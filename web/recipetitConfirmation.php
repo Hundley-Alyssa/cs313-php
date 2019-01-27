@@ -33,11 +33,20 @@ $_SESSION['zipcode'] = $_POST['zipcode'];
             <?php include ("recipetitnav.php"); ?> 
         </div>
 
+        <p>Shipping to:</p>
+        <?php echo $_SESSION["address"]; ?>
+        <br>
+        <?php echo $_SESSION["city"]; ?>
+        <br>
+        <?php echo $_SESSION["state"]; ?>
+        <br>
+        <?php echo $_SESSION["zipcode"]; ?>
 
-    
-            
 
         
+            
+
+        <!-- Shipping to: <?php echo $_SESSION["address"]; <br> echo $_SESSION["city"]; <p>, </p> echo $_SESSION"state"]; <p> </p> echo $_SESSION["zipcode"];?>  -->
         
 
         	
