@@ -26,7 +26,7 @@ session_start();
             <?php include ("recipetitnav.php"); ?> 
         </div>
         <h2>Enter User ID</h2>
-        <form action="" method"post">
+        <form action="recipetitView.php" method"post">
             <input type="text" name="userID"/>
             <input type="submit" name="submit" value="Submit!" />
         </form>
