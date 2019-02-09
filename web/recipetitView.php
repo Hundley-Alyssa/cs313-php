@@ -25,6 +25,11 @@ session_start();
 
             <?php include ("recipetitnav.php"); ?> 
         </div>
+        <h2>Enter User ID</h2>
+        <form action="" method"post">
+            <input type="text" name="userID"/>
+            <input type="submit" name="Submit" value="Submit!" />
+        </form>
 
         <?php
             try
@@ -50,18 +55,20 @@ session_start();
              die();
             }
 
+            if (isset($_POST['Submit'])) { 
 
-            echo '<form method="post" action ="recipetitView.php?submit=true">';
+                number_format($_POST['userID']);
+                $_SESSION['userID'] = $_POST['userID'];
+            } 
+
             foreach ($db->query('SELECT name FROM recipe') as $row)
              {
-
-                '<input id ="radioButton" type="radio" name="name" value="name" checked>'. $row['name'] . '<br>';
+                echo $row['name'];
+                echo '<br>';
                 
               
              }
-             echo '<input type="submit" name="submit" value="submit" />';
-
-             echo '</form>'
+          
 
              
         ?>
