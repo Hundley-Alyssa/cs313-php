@@ -61,7 +61,7 @@ session_start();
                 $_SESSION['userID'] = $_POST['userID'];
             } 
 
-            foreach ($db->query('SELECT name FROM recipe') as $row)
+            foreach ($db->query("SELECT user_id, name FROM recipe WHERE user_id = '{$_SESSION['user_id']}'") as $row)
              {
                 echo $row['name'];
                 echo '<br>';
