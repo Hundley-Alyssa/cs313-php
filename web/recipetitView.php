@@ -60,7 +60,7 @@ session_start();
                 foreach ($db->query("SELECT user_id, name FROM recipe") as $row)
              {
                 
-                echo '<a href="recipetitViewRecipe.php">' . $row['name'] . '</a>';
+                echo '<a id="links" href="recipetitViewRecipe.php">' . $row['name'] . '</a>';
                 echo '<br>';
                 
               

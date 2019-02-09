@@ -94,6 +94,9 @@ a:active {
 #radioButton{
     color: black;
 }
+#links{
+    color: black;
+}
 
 #about {
     border-top: solid #ef4266 10px;
