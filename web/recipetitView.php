@@ -50,13 +50,34 @@ session_start();
              die();
             }
 
+
+            echo '<form method="post" action ="recipetitView.php?submit=true">';
             foreach ($db->query('SELECT name FROM recipe') as $row)
              {
-                 echo $row['name'] . '  ' . '<button onclick="editFunction()"id="editButton">EDIT</button>';
+
+                '<input type="radio" name="gender" value="male" checked>'. $row['name'];
+             
                  echo '<br>';
              }
+             echo '<input type="submit" name="submit" value="submit" />';
+
+             echo '</form>'
+
+             
         ?>
         
+        <!-- <h2>Enter User ID</h2>
+        <form method="post" action="recipetitView.php?submit=true">
+            <input type="text" name="userID" id="userID" value=""/>
+            <input type="submit" name="submit" value="submit" />
+    </form>
+
+
+    
+        
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other   -->
+
 
     </main>
 
