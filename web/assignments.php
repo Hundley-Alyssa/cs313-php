@@ -35,7 +35,7 @@
 
         <div id="assignments">
 
-        	<a href="shoppingcart.php">Shopping Cart</a>
+        	<a href="shoppingcart.php">Recipetit App</a>
 
         	
 
