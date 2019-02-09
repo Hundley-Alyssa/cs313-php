@@ -55,10 +55,7 @@ session_start();
              die();
             }
 
-            if (isset($_POST['submit'])) { 
-
-                number_format($_POST['userID']);
-                $_SESSION['userID'] = $_POST['userID'];
+        
 
                 foreach ($db->query("SELECT user_id, name FROM recipe") as $row)
              {
@@ -67,7 +64,7 @@ session_start();
                 
               
              }
-            } 
+            
 
             
           
