@@ -49,7 +49,7 @@
 
             foreach ($db->query('SELECT name FROM recipe') as $row)
              {
-                 echo $row['name'];
+                 echo $row['name'] . '  ' . '<button id="editButton">EDIT</button>';
                  echo '<br>';
              }
         ?>
