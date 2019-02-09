@@ -59,21 +59,23 @@ session_start();
 
                 number_format($_POST['userID']);
                 $_SESSION['userID'] = $_POST['userID'];
-            } 
 
-            foreach ($db->query("SELECT user_id, name FROM recipe WHERE user_id = '{$_SESSION['user_id']}'") as $row)
+                foreach ($db->query("SELECT user_id, name FROM recipe WHERE user_id = '{$_SESSION['user_id']}'") as $row)
              {
                 echo $row['name'];
                 echo '<br>';
                 
               
              }
+            } 
+
+            
           
 
              
         ?>
 
-        
+
         
         <!-- <h2>Enter User ID</h2>
         <form method="post" action="recipetitView.php?submit=true">
