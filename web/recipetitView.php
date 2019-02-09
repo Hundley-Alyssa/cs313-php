@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -49,13 +52,15 @@
 
             foreach ($db->query('SELECT name FROM recipe') as $row)
              {
-                 echo $row['name'] . '  ' . '<button id="editButton">EDIT</button>';
+                 echo $row['name'] . '  ' . '<button onclick="editFunction()"id="editButton">EDIT</button>';
                  echo '<br>';
              }
         ?>
         
 
     </main>
+
+    <script src="recipetitScripts.js"></script>
 
     <footer>
 
