@@ -28,7 +28,7 @@ session_start();
         <h2>Enter User ID</h2>
         <form action="" method"post">
             <input type="text" name="userID"/>
-            <input type="submit" name="Submit" value="Submit!" />
+            <input type="submit" name="submit" value="Submit!" />
         </form>
 
         <?php
@@ -55,7 +55,7 @@ session_start();
              die();
             }
 
-            if (isset($_POST['Submit'])) { 
+            if (isset($_POST['submit'])) { 
 
                 number_format($_POST['userID']);
                 $_SESSION['userID'] = $_POST['userID'];
