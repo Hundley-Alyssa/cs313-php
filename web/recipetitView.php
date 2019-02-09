@@ -55,7 +55,7 @@ session_start();
             foreach ($db->query('SELECT name FROM recipe') as $row)
              {
 
-                '<input id ="radioButton" type="radio" name="gender" value="male" checked>'. $row['name'] . '<br>';
+                '<input id ="radioButton" type="radio" name="name" value="name" checked>'. $row['name'] . '<br>';
                 
               
              }
