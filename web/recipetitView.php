@@ -25,11 +25,11 @@ session_start();
 
             <?php include ("recipetitnav.php"); ?> 
         </div>
-        <h2>Enter User ID</h2>
+        <!-- <h2>Enter User ID</h2>
         <form action="recipetitView.php" method"post">
             <input type="text" name="userID"/>
             <input type="submit" name="submit" value="Submit!" />
-        </form>
+        </form> -->
 
         <?php
             try
@@ -59,7 +59,8 @@ session_start();
 
                 foreach ($db->query("SELECT user_id, name FROM recipe") as $row)
              {
-                echo $row['name'];
+                
+                echo '<a href="recipetitViewRecipe.php">' . $row['name'] . '</a>';
                 echo '<br>';
                 
               
