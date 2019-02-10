@@ -48,7 +48,7 @@ $review_id = htmlspecialchars($_GET['review_id']);
         
 
 
-        <h2><?php echo $review_name?></h2>
+        <h2><?php echo $review_id?></h2>
 
         <?php
             // foreach($review_rows as $review_row){
