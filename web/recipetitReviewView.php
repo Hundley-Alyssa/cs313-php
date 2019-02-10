@@ -52,8 +52,8 @@ $recipe_name = $review_rows[0]['name'];
 
         <?php
             foreach($review_rows as $review_row){
-                $rating = $review_row['review.rating'];
-                $comments = $review_row['review.comments'];
+                $rating = $review_row['rating'];
+                $comments = $review_row['comments'];
                
 
 
