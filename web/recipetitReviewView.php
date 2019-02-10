@@ -51,16 +51,16 @@ $review_name = $review_rows[0]['name'];
         <h2><?php echo $review_name;?></h2>
 
         <?php
-            foreach($review_rows as $review_row){
-                $rating = $review_row['rating'];
-                $comments = $review_row['comments'];
+            // foreach($review_rows as $review_row){
+            //     $rating = $review_row['rating'];
+            //     $comments = $review_row['comments'];
                
 
 
-                echo"<p>$rating</p>";
-                echo"<p>$comments</p>";
+            //     echo"<p>$rating</p>";
+            //     echo"<p>$comments</p>";
               
-            }
+            // }
 
         ?>
 
