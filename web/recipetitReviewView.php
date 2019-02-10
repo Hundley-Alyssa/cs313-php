@@ -17,7 +17,7 @@ $stmt->bindValue(':id', $review_id, PDO::PARAM_INT);
 $stmt->execute();
 $review_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// $review_name = $review_rows[1]['name'];
+$review_name = $review_rows[4]['name'];
 ?>
 <!--  -->
 
@@ -48,19 +48,19 @@ $review_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
 
 
-        <h2><?php echo $review_id?></h2>
+        <h2><?php echo $review_name?></h2>
 
         <?php
-            // foreach($review_rows as $review_row){
-            //     $rating = $review_row['rating'];
-            //     $comments = $review_row['comments'];
+            foreach($review_rows as $review_row){
+                $rating = $review_row['rating'];
+                $comments = $review_row['comments'];
                
 
 
-            //     echo"<p>$rating</p>";
-            //     echo"<p>$comments</p>";
+                echo"<p>$rating</p>";
+                echo"<p>$comments</p>";
               
-            // }
+            }
 
         ?>
 
@@ -70,19 +70,7 @@ $review_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
         
-        <!-- <h2>Enter User ID</h2>
-        <form method="post" action="recipetitView.php?submit=true">
-            <input type="text" name="userID" id="userID" value=""/>
-            <input type="submit" name="submit" value="submit" />
-    </form>
-
-
-    
-        
-        <input type="radio" name="gender" value="female"> Female<br>
-        <input type="radio" name="gender" value="other"> Other   -->
-
-
+       
     </main>
 
     <script src="recipetitScripts.js"></script>
