@@ -66,6 +66,8 @@ $recipe_name = $recipe_rows[1]['name'];
 
         ?>
 
+        <button><a href="recipetitEdit.php">Edit</a></button>
+
 
 
 
