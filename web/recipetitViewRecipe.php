@@ -17,7 +17,7 @@ $stmt->bindValue(':id', $recipe_id, PDO::PARAM_INT);
 $stmt->execute();
 $recipe_rows = $stmt->fetchAll(PDO::Fetch_ASSOC);
 
-$recipe_name = $recipe_rows[1]['name'];
+$recipe_name = $recipe_rows[0]['name'];
 ?>
 
 
