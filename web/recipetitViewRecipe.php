@@ -9,8 +9,8 @@ if (!isset($_GET['recipe_id']))
 
 $recipe_id = htmlspecialchars($_GET['recipe_id']);
 
-// require('dbConnect.php');
-// $db = get_db();
+require('dbConnect.php');
+$db = get_db();
 
 // $stmt = $db->prepare('SELECT id, name, cook_time, oven_temp, ingredients, instructions FROM recipe WHERE id=:id');
 // $stmt->bindValue(':id', $recipe_id, PDO::PARAM_INT);
