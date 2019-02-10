@@ -2,7 +2,7 @@
 require('dbConnect.php');
 $db = get_db();
 
-$query = 'SELECT id, name FROM recipe';
+$query = 'SELECT id, name, cook_time, cook_temp, ingredients, instructions FROM recipe';
 $stmt = $db->prepare($query);
 $stmt->execute();
 $recipes = $stmt->fetchALL(PDO::FETCH_ASSOC);
@@ -51,7 +51,10 @@ $recipes = $stmt->fetchALL(PDO::FETCH_ASSOC);
                 
                 $recipeId = $recipe['id'];
                 $name = $recipe['name'];
-
+                $cookTime = $recipe['cook_time'];
+                $cookTime = $recipe['cook_temp'];
+                $cookTime = $recipe['ingredients'];
+                $cookTime = $recipe['instructions'];
                 echo "<li><p>$name</p></li>";
                 
          
