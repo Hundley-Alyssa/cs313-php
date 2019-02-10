@@ -9,15 +9,15 @@ if (!isset($_GET['recipe_id']))
 
 $recipe_id = htmlspecialchars($_GET['recipe_id']);
 
-require('dbConnect.php');
-$db = get_db();
+// require('dbConnect.php');
+// $db = get_db();
 
-$stmt = $db->prepare('SELECT id, name, cook_time, oven_temp, ingredients, instructions FROM recipe WHERE id=:id');
-$stmt->bindValue(':id', $recipe_id, PDO::PARAM_INT);
-$stmt->execute();
-$recipe_rows = $stmt->fetchAll(PDO::Fetch_ASSOC);
+// $stmt = $db->prepare('SELECT id, name, cook_time, oven_temp, ingredients, instructions FROM recipe WHERE id=:id');
+// $stmt->bindValue(':id', $recipe_id, PDO::PARAM_INT);
+// $stmt->execute();
+// $recipe_rows = $stmt->fetchAll(PDO::Fetch_ASSOC);
 
-$recipe_name = $recipe_rows[0]['name'];
+// $recipe_name = $recipe_rows[0]['name'];
 ?>
 
 
@@ -48,21 +48,21 @@ $recipe_name = $recipe_rows[0]['name'];
         
 
 
-        <h2><?php echo $recipe_name?></h2>
+        <h2><?php echo $recipe_id?></h2>
 
         <?php
-            foreach($recipe_rows as $recipe_row){
-                $cook_time = $recipe_row['cook_time'];
-                $oven_temp = $recipe_row['oven_temp'];
-                $ingredients = $recipe_row['ingredients'];
-                $instructions = $recipe_row['instructions'];
+            // foreach($recipe_rows as $recipe_row){
+            //     $cook_time = $recipe_row['cook_time'];
+            //     $oven_temp = $recipe_row['oven_temp'];
+            //     $ingredients = $recipe_row['ingredients'];
+            //     $instructions = $recipe_row['instructions'];
 
 
-                echo"<p>$cook_time</p>";
-                echo"<p>$oven_temp</p>";
-                echo"<p>$ingredients</p>";
-                echo"<p>$instructions</p>";
-            }
+            //     echo"<p>$cook_time</p>";
+            //     echo"<p>$oven_temp</p>";
+            //     echo"<p>$ingredients</p>";
+            //     echo"<p>$instructions</p>";
+            // }
 
         ?>
 
