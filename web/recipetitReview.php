@@ -35,7 +35,7 @@ $reviews = $stmt->fetchALL(PDO::FETCH_ASSOC);
             <?php include ("recipetitnav.php"); ?> 
         </div>
 
-        <h2>Click on a recipe name to view full recipe</h2>
+        <h2>Click on a recipe name to view full review</h2>
         <!-- <h2>Enter User ID</h2>
         <form action="recipetitView.php" method"post">
             <input type="text" name="userID"/>
