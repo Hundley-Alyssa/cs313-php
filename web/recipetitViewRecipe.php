@@ -48,7 +48,7 @@ $recipe_name = $recipe_rows[1]['name'];
         
 
 
-        <h2><?php echo $recipe_name?></h2>
+        <h2><?php echo $recipe_name;?></h2>
 
         <?php
             foreach($recipe_rows as $recipe_row){
