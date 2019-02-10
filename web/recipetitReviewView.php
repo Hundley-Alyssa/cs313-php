@@ -17,7 +17,7 @@ $stmt->bindValue(':id', $review_id, PDO::PARAM_INT);
 $stmt->execute();
 $review_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$review_name = $review_rows[0]['name'];
+$review_name = $review_rows[3]['recipe.name'];
 ?>
 <!--  -->
 
@@ -52,8 +52,8 @@ $review_name = $review_rows[0]['name'];
 
         <?php
             foreach($review_rows as $review_row){
-                $rating = $review_row['rating'];
-                $comments = $review_row['comments'];
+                $rating = $review_row['review.rating'];
+                $comments = $review_row['review.comments'];
                
 
 
