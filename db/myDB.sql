@@ -77,3 +77,8 @@ VALUES ('this recipe needs more strawberry', 2, 6, 4);
 
 
 
+SELECT id, name, cook_time, oven_temp, ingredients, instructions FROM recipe;
+
+
+SELECT id, name, cook_time, oven_temp, ingredients, instructions FROM recipe WHERE id=:id;
+
