@@ -9,17 +9,17 @@ if (!isset($_GET['review_id']))
 
 $review_id = htmlspecialchars($_GET['review_id']);
 
-require('dbConnect.php');
-$db = get_db();
+// require('dbConnect.php');
+// $db = get_db();
 
-$stmt = $db->prepare('SELECT review.id, review.rating, review.comments, recipe.name FROM recipe JOIN review ON recipe.id = review.recipe_id WHERE id=:id');
-$stmt->bindValue(':id', $review_id, PDO::PARAM_INT);
-$stmt->execute();
-$review_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// $stmt = $db->prepare('SELECT review.id, review.rating, review.comments, recipe.name FROM recipe JOIN review ON recipe.id = review.recipe_id WHERE id=:id');
+// $stmt->bindValue(':id', $review_id, PDO::PARAM_INT);
+// $stmt->execute();
+// $review_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$review_name = $review_rows[1]['name'];
+// $review_name = $review_rows[1]['name'];
 ?>
-
+<!--  -->
 
 <!DOCTYPE html>
 
@@ -51,16 +51,16 @@ $review_name = $review_rows[1]['name'];
         <h2><?php echo $review_name?></h2>
 
         <?php
-            foreach($review_rows as $review_row){
-                $rating = $review_row['rating'];
-                $comments = $review_row['comments'];
+            // foreach($review_rows as $review_row){
+            //     $rating = $review_row['rating'];
+            //     $comments = $review_row['comments'];
                
 
 
-                echo"<p>$rating</p>";
-                echo"<p>$comments</p>";
+            //     echo"<p>$rating</p>";
+            //     echo"<p>$comments</p>";
               
-            }
+            // }
 
         ?>
 
