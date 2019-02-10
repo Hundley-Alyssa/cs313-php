@@ -52,11 +52,9 @@ $recipes = $stmt->fetchALL(PDO::FETCH_ASSOC);
                 $recipeId = $recipe['id'];
                 $name = $recipe['name'];
 
-                echo '<a id="links" href="recipetitViewRecipe.php">$name</a>';
-                echo '<br>';
+                echo "<li><p>$name</p></li>";
                 
-           
-              
+         
              }
             
 
