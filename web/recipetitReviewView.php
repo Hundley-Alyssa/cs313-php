@@ -17,7 +17,7 @@ $stmt->bindValue(':id', $review_id, PDO::PARAM_INT);
 $stmt->execute();
 $review_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$review_name = $review_rows[0]['name'];
+// $review_name = $review_rows[0]['name'];
 ?>
 <!--  -->
 
