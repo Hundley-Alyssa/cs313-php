@@ -12,7 +12,7 @@ $review_id = htmlspecialchars($_GET['review_id']);
 require('dbConnect.php');
 $db = get_db();
 
-$stmt = $db->prepare('SELECT recipe.name review.rating, review.comments FROM recipe JOIN review ON recipe.id = review.recipe_id WHERE recipe.id=:id');
+$stmt = $db->prepare('SELECT  review.rating, review.comments recipe.name FROM recipe JOIN review ON recipe.id = review.recipe_id WHERE recipe.id=:id');
 $stmt->bindValue(':id', $review_id, PDO::PARAM_INT);
 $stmt->execute();
 $review_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
