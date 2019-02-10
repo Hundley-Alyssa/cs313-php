@@ -1,5 +1,14 @@
 <?php
-session_start();
+require('dbConnect.php');
+$db = get_db();
+
+$query = 'SELECT id, name FROM recipe';
+$stmt = $db->prepare($query);
+$stmt->execute();
+$recipes = $stmt->fetchALL(PDO::FETCH_ASSOC);
+
+
+
 ?>
 <!DOCTYPE html>
 
@@ -25,6 +34,8 @@ session_start();
 
             <?php include ("recipetitnav.php"); ?> 
         </div>
+
+        <h2>Click on a recipe name to view full recipe</h2>
         <!-- <h2>Enter User ID</h2>
         <form action="recipetitView.php" method"post">
             <input type="text" name="userID"/>
@@ -32,37 +43,19 @@ session_start();
         </form> -->
 
         <?php
-            try
-            {
-             $dbUrl = getenv('DATABASE_URL');
 
-             $dbOpts = parse_url($dbUrl);
 
-             $dbHost = $dbOpts["host"];
-             $dbPort = $dbOpts["port"];
-             $dbUser = $dbOpts["user"];
-             $dbPassword = $dbOpts["pass"];
-             $dbName = ltrim($dbOpts["path"],'/');
-
-             $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-            }
-            catch (PDOException $ex)
-            {
-             echo 'Error!: ' . $ex->getMessage();
-             die();
-            }
-
-        
-
-                foreach ($db->query("SELECT user_id, name FROM recipe") as $row)
+            
+                foreach ($recipes as $recipe)
              {
                 
-                echo '<a id="links" href="recipetitViewRecipe.php">' . $row['name'] . '</a>';
+                $recipeId = $recipe['id'];
+                $name = $recipe['name'];
+
+                echo '<a id="links" href="recipetitViewRecipe.php">$name</a>';
                 echo '<br>';
                 
+           
               
              }
             
