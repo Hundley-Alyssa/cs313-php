@@ -8,7 +8,6 @@ $stmt->execute();
 $recipes = $stmt->fetchALL(PDO::FETCH_ASSOC);
 
 
-
 ?>
 <!DOCTYPE html>
 
@@ -39,9 +38,7 @@ $recipes = $stmt->fetchALL(PDO::FETCH_ASSOC);
         
 
         <?php
-
-
-            
+        
                 foreach ($recipes as $recipe)
              {
                 
@@ -55,27 +52,8 @@ $recipes = $stmt->fetchALL(PDO::FETCH_ASSOC);
                 
          
              }
-            
-
-            
-          
-
              
         ?>
-
-
-        
-        <!-- <h2>Enter User ID</h2>
-        <form method="post" action="recipetitView.php?submit=true">
-            <input type="text" name="userID" id="userID" value=""/>
-            <input type="submit" name="submit" value="submit" />
-    </form>
-
-
-    
-        
-        <input type="radio" name="gender" value="female"> Female<br>
-        <input type="radio" name="gender" value="other"> Other   -->
 
 
     </main>

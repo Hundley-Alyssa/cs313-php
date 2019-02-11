@@ -82,3 +82,5 @@ SELECT id, name, cook_time, oven_temp, ingredients, instructions FROM recipe;
 
 SELECT id, name, cook_time, oven_temp, ingredients, instructions FROM recipe WHERE id=:id;
 
+SELECT review.id, recipe.name FROM recipe JOIN review ON recipe.id = review.recipe_id;  
+
