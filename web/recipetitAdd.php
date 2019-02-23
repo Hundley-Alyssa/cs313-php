@@ -31,6 +31,8 @@
 
         <form method="post" action="insert_recipe.php">
             <input type="hidden" name="recipe_id" value="<?php echo $recipe_id; ?>">
+            Recipe Name:<br>
+            <input type="text" name="recipename"> 
             Cook Time:<br>
             <input type="number" name="cooktime">
             <br>
