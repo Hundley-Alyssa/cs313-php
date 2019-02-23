@@ -27,7 +27,21 @@
         
 
 
-        <h2><?php echo $recipe_name;?></h2>
+        <!-- <h2><?php echo $recipe_name;?></h2> -->
+
+        <form method="post" action="insert_recipe.php">
+            <input type="hidden" name="recipe_id" value="<?php echo $recipe_id; ?>">
+            Cook Time:<br>
+            <input type="number" name="cooktime">
+            <br>
+            Oven Temperature:<br>
+            <input type="number" name="oventemp">
+            Ingredients:<br>
+            <textarea name="ingredients"></textarea>
+            Instructions:<br>
+            <textarea name="instructions"></textarea>
+
+            <input type="submit" value="Add Recipe">
 
         
 
