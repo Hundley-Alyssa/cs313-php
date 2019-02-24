@@ -1,6 +1,6 @@
 <?php
 
-// $id = $pdo->lastInsertId('recipe_id_seq');
+$id = $pdo->lastInsertId('recipe_id_seq');
 $name = htmlspecialchars($_POST['recipe_name']);
 $cook_time = htmlspecialchars($_POST['cooktime']);
 $oven_temp = htmlspecialchars($_POST['oventemp']);
@@ -27,7 +27,7 @@ $stmt->execute();
 
 
 
-$new_page = "recipetitViewRecipe.php";
+$new_page = "recipetitViewRecipe.php?recipe_id=$id";
 
 header("Location :$new_page");
 
