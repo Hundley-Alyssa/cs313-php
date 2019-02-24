@@ -2,8 +2,8 @@
 
 $id = $pdo->lastInsertId('recipe_id_seq');
 $name = htmlspecialchars($_POST['recipe_name']);
-$cookTime = htmlspecialchars($_POST['cooktime']);
-$ovenTemp = htmlspecialchars($_POST['oventemp']);
+$cook_time = htmlspecialchars($_POST['cooktime']);
+$oven_temp = htmlspecialchars($_POST['oventemp']);
 $ingredients = htmlspecialchars($_POST['ingredients']);
 $instructions = htmlspecialchars($_POST['instructions']);
 
