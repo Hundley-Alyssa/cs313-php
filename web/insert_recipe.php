@@ -9,9 +9,6 @@ $instructions = htmlspecialchars($_POST['instructions']);
 
 
 
-echo $cookTime;
-echo $ingredients;
-
 
 require('dbConnect.php');
 $db = get_db();

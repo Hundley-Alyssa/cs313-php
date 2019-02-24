@@ -18,7 +18,7 @@ $stmt->execute();
 
 
 
-$new_page = "recipetitViewRecipe.php?recipe_id=$recipe_id";
+$new_page = "recipetitViewRecipe.php";
 
 header("Location :$new_page");
 
