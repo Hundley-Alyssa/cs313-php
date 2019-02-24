@@ -31,6 +31,7 @@
 
        
 <!--             <input type="hidden" name="user_id" value="<?php echo $user_id; ?>"> -->
+        <form method="post" action="insert_review.php">
             Comments:<br>
             <textarea name="comments"></textarea>
             <br>
