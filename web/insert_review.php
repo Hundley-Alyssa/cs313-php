@@ -9,7 +9,7 @@ $rating = htmlspecialchars($_POST['rating']);
 require('dbConnect.php');
 $db = get_db();
 
-$stmt = $db->prepare('INSERT INTO review(comments, rating, recip_id) VALUES (:comments, :rating, :recipe_id);');
+$stmt = $db->prepare('INSERT INTO review(comments, rating, recipe_id) VALUES (:comments, :rating, :recipe_id);');
 
 $stmt->bindValue(':comments', $comments, PDO::PARAM_STR);
 $stmt->bindValue(':rating', $rating, PDO::PARAM_INT);
