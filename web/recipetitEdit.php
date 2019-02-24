@@ -56,7 +56,23 @@ $instructions = $recipe_rows[4]['instructions'];
 
 
 
-       
+       <form method="post" action="update_recipe.php">
+            <input type="hidden" name="recipe_id" value="<?php echo $recipe_id; ?>">
+            Recipe Name:<br>
+            <input type="text" name="recipe_name" value="<?php echo $recipe_name;?>"> 
+            Cook Time:<br>
+            <input type="number" name="cooktime" value="<?php echo $cooktime;?>">
+            <br>
+            Oven Temperature:<br>
+            <input type="number" name="oventemp" value="<?php echo $oventemp;?>">
+            Ingredients:<br>
+            <textarea name="ingredients"></textarea value="<?php echo $ingredients;?>">
+            Instructions:<br>
+            <textarea name="instructions"></textarea value="<?php echo $instructions;?>">
+
+            <input type="submit" value="Update Recipe">
+        </form>
+
         
 
 
