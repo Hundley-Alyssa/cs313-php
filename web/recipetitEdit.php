@@ -66,9 +66,9 @@ $instructions = $recipe_rows[0]['instructions'];
             Oven Temperature:<br>
             <input type="number" name="oventemp" value="<?php echo $oventemp;?>">
             Ingredients:<br>
-            <textarea name="ingredients" value="<?php echo $ingredients;?>"></textarea>
+            <input name="ingredients" value="<?php echo $ingredients;?>">
             Instructions:<br>
-            <textarea name="instructions" value="<?php echo $instructions;?>"></textarea>
+            <input name="instructions" value="<?php echo $instructions;?>">
 
             <input type="submit" value="Update Recipe">
         </form>
