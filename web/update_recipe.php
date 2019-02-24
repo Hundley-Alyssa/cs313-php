@@ -17,8 +17,8 @@ $stmt = $db->prepare('UPDATE recipe SET name=:name, cook_time=:cook_time, oven_t
 
 $stmt->bindValue(':id', $recipe_id, PDO::PARAM_INT);
 $stmt->bindValue(':name', $name, PDO::PARAM_STR);
-$stmt->bindValue(':cook_time', $cook_time, PDO::PARAM_INT);
-$stmt->bindValue(':oven_temp', $oven_temp, PDO::PARAM_INT);
+$stmt->bindValue(':cook_time', $cookTime, PDO::PARAM_INT);
+$stmt->bindValue(':oven_temp', $ovenTemp, PDO::PARAM_INT);
 $stmt->bindValue(':ingredients', $ingredients, PDO::PARAM_STR);
 $stmt->bindValue(':instructions', $instructions, PDO::PARAM_STR);
 $stmt->execute();
