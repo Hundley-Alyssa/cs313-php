@@ -8,10 +8,6 @@ $instructions = htmlspecialchars($_POST['instructions']);
 
 
 
-echo $cookTime;
-echo $ingredients;
-
-
 require('dbConnect.php');
 $db = get_db();
 
@@ -25,7 +21,7 @@ $stmt->bindValue(':ingredients', $ingredients, PDO::PARAM_STR);
 $stmt->bindValue(':instructions', $instructions, PDO::PARAM_STR);
 $stmt->execute();
 
-// $new_page = "recipetitView.php?id=$user_id";
+$new_page = "recipetitEdit.php?recipe_id=$recipe_id";
 
 header("Location :$new_page");
 
