@@ -19,10 +19,10 @@ $stmt->execute();
 $recipe_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $recipe_name = $recipe_rows[0]['name'];
-$cooktime = $recipe_rows[1]['cook_time'];
-$oventemp = $recipe_rows[2]['oven_temp'];
-$ingredients = $recipe_rows[3]['ingredients'];
-$instructions = $recipe_rows[4]['instructions'];
+// $cooktime = $recipe_rows[1]['cook_time'];
+// $oventemp = $recipe_rows[2]['oven_temp'];
+// $ingredients = $recipe_rows[3]['ingredients'];
+// $instructions = $recipe_rows[4]['instructions'];
 
 
 
