@@ -48,8 +48,9 @@ $recipe_name = $recipe_rows[0]['name'];
         <!-- <h2><?php echo $recipe_name;?></h2> -->
 
        
-<!--             <input type="hidden" name="user_id" value="<?php echo $user_id; ?>"> -->
+
         <form method="post" action="insert_review.php">
+            <input type="hidden" name="recipe_id" value="<?php echo $recipe_id; ?>">
             Comments:<br>
             <textarea name="comments"></textarea>
             <br>
