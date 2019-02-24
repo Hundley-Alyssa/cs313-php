@@ -1,5 +1,7 @@
 <?php
 
+
+$recipe_id = htmlspecialchars($_POST['recipe_id']);
 $name = htmlspecialchars($_POST['recipe_name']);
 $cookTime = htmlspecialchars($_POST['cooktime']);
 $ovenTemp = htmlspecialchars($_POST['oventemp']);
