@@ -65,10 +65,13 @@ $recipe_name = $recipe_rows[0]['name'];
                 echo"<p>$instructions</p>";
             }
 
+            echo "<button><a href='recipetitEdit.php?recipe_id=$recipe_id'>Edit</a></button>";
+            echo "<button><a href='recipetitReviewAdd.php?recipe_id=$recipe_id'>Add Review</a></button>";
+
         ?>
 
-        <button><a href="recipetitEdit.php">Edit</a></button>
-        <button><a href="recipetitReviewAdd.php">Add Review</a></button>
+        <!-- <button><a href="recipetitEdit.php?recipe_id=$recipe_id">Edit</a></button> -->
+        <!-- <button><a href="recipetitReviewAdd.php?recipe_id=$recipe_id">Add Review</a></button> -->
 
 
 
