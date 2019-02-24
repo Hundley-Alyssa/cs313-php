@@ -63,13 +63,7 @@ $recipe_name = $review_rows[0]['name'];
             }
 
         ?>
-
-        <button><a href="reviewEdit.php">Edit</a></button>
-
-
-
-
-        
+      
        
     </main>
 
