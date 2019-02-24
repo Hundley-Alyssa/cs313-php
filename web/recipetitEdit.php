@@ -18,11 +18,11 @@ $stmt->bindValue(':id', $recipe_id, PDO::PARAM_INT);
 $stmt->execute();
 $recipe_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// $recipe_name = $recipe_rows[1]['name'];
-// $cooktime = $recipe_rows[1]['cook_time'];
-// $oventemp = $recipe_rows[2]['oven_temp'];
-// $ingredients = $recipe_rows[3]['ingredients'];
-// $instructions = $recipe_rows[4]['instructions'];
+$recipe_name = $recipe_rows[0]['name'];
+$cooktime = $recipe_rows[1]['cook_time'];
+$oventemp = $recipe_rows[2]['oven_temp'];
+$ingredients = $recipe_rows[3]['ingredients'];
+$instructions = $recipe_rows[4]['instructions'];
 
 
 
@@ -56,22 +56,7 @@ $recipe_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 
-        <!-- <form method="post" action="update_recipe.php">
-            <input type="hidden" name="recipe_id" value="<?php echo $recipe_id; ?>">
-            Recipe Name:<br>
-            <input type="text" name="recipe_name" <?php echo "value='$recipe_name'";}?>> 
-            Cook Time:<br>
-            <input type="number" name="cooktime" <?php echo "value='$cooktime'";}?>>
-            <br>
-            Oven Temperature:<br>
-            <input type="number" name="oventemp" <?php echo "value='$oventemp'";}?>>
-            Ingredients:<br>
-            <textarea name="ingredients"></textarea <?php echo "value='$ingredients'";}?>>
-            Instructions:<br>
-            <textarea name="instructions"></textarea <?php echo "value='$instructions'";}?>>
-
-            <input type="submit" value="Update Recipe">
-        </form> -->
+       
         
 
 
