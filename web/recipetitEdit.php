@@ -56,7 +56,7 @@ $instructions = $recipe_rows[4]['instructions'];
 
 
 
-        <form method="post" action="update_recipe.php">
+        <!-- <form method="post" action="update_recipe.php">
             <input type="hidden" name="recipe_id" value="<?php echo $recipe_id; ?>">
             Recipe Name:<br>
             <input type="text" name="recipe_name" <?php echo "value='$recipe_name'";}?>> 
@@ -71,7 +71,7 @@ $instructions = $recipe_rows[4]['instructions'];
             <textarea name="instructions"></textarea <?php echo "value='$instructions'";}?>>
 
             <input type="submit" value="Update Recipe">
-        </form>
+        </form> -->
         
 
 
