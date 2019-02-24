@@ -18,6 +18,7 @@ $stmt->execute();
 $recipe_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $recipe_name = $recipe_rows[0]['name'];
+
 ?>
 
 
@@ -67,6 +68,7 @@ $recipe_name = $recipe_rows[0]['name'];
         ?>
 
         <button><a href="recipetitEdit.php">Edit</a></button>
+       <!--  <button><a href="reviewEdit.php">Add Review</a></button> -->
 
 
 

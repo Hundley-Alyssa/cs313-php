@@ -30,9 +30,9 @@
         <!-- <h2><?php echo $recipe_name;?></h2> -->
 
         <form method="post" action="insert_recipe.php">
-            <input type="hidden" name="recipe_id" value="<?php echo $recipe_id; ?>">
+<!--             <input type="hidden" name="user_id" value="<?php echo $user_id; ?>"> -->
             Recipe Name:<br>
-            <input type="text" name="recipename"> 
+            <input type="text" name="recipe_name"> 
             Cook Time:<br>
             <input type="number" name="cooktime">
             <br>
@@ -44,6 +44,7 @@
             <textarea name="instructions"></textarea>
 
             <input type="submit" value="Add Recipe">
+        </form>
 
         
 
