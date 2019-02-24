@@ -11,7 +11,7 @@ $instructions = htmlspecialchars($_POST['instructions']);
 require('dbConnect.php');
 $db = get_db();
 
-$stmt = $db->prepare('UPDATE recipe SET name=:name, cook_time=:cook_time, oven_temp-:oven_temp, ingredients-:ingredients, instructions=:instructions WHERE id=:id;');
+$stmt = $db->prepare('UPDATE recipe SET name=:name, cook_time=:cook_time, oven_temp=:oven_temp, ingredients=:ingredients, instructions=:instructions WHERE id=:id;');
 
 $stmt->bindValue(':id', $recipe_id, PDO::PARAM_INT);
 $stmt->bindValue(':name', $name, PDO::PARAM_STR);
