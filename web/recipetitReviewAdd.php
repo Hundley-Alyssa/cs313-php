@@ -1,5 +1,23 @@
+<?php
+if (!isset($_GET['recipe_id']))
+{
+    die("Error, recipe id not set");
+}
 
 
+
+$recipe_id = htmlspecialchars($_GET['recipe_id']);
+
+require('dbConnect.php');
+$db = get_db();
+
+$stmt = $db->prepare('SELECT id, name, cook_time, oven_temp, ingredients, instructions FROM recipe WHERE id=:id');
+$stmt->bindValue(':id', $recipe_id, PDO::PARAM_INT);
+$stmt->execute();
+$recipe_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$recipe_name = $recipe_rows[0]['name'];
+?>
 <!DOCTYPE html>
 
 <html lang="en">
