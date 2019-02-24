@@ -32,7 +32,7 @@
        
 <!--             <input type="hidden" name="user_id" value="<?php echo $user_id; ?>"> -->
             Comments:<br>
-            <textarea name="comments">
+            <textarea name="comments"></textarea>
             <br>
             Rating:<br>
             <input type="number" name="rating">
