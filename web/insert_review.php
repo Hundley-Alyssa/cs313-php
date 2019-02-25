@@ -20,7 +20,7 @@ $stmt->execute();
 
 $newpage = "recipetitViewRecipe.php?recipe_id=$recipe_id";
 
-header('Location: recipetitViewRecipe.php?recipe_id=$recipe_id');
+header('Location: recipetitViewRecipe.php?id=$recipe_id');
 
 
 die();
