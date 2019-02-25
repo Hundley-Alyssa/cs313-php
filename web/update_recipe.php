@@ -25,7 +25,7 @@ $stmt->execute();
 
 $new_page = "recipetitEdit.php?recipe_id=$recipe_id";
 
-header("Location :$new_page");
+header("Location :recipetitView.php");
 
 
 die();

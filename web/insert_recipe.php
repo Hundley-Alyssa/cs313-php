@@ -26,7 +26,7 @@ $stmt->execute();
 
 $new_page = "recipetitView.php";
 
-header("Location :$new_page");
+header("Location :recipetitView.php");
 
 
 die();
