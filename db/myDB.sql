@@ -82,5 +82,8 @@ SELECT id, name, cook_time, oven_temp, ingredients, instructions FROM recipe;
 
 SELECT id, name, cook_time, oven_temp, ingredients, instructions FROM recipe WHERE id=:id;
 
-SELECT review.id, recipe.name FROM recipe JOIN review ON recipe.id = review.recipe_id;  
+SELECT review.id, recipe.name FROM recipe JOIN review ON recipe.id = review.recipe_id; 
+
+
+UPDATE recipe SET name=:name, cook_time=:cook_time, oven_temp=:oven_temp, ingredients=:ingredients, instructions=:instructions WHERE id=:id;
 
