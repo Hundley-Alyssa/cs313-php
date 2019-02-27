@@ -48,7 +48,7 @@ $recipes = $stmt->fetchALL(PDO::FETCH_ASSOC);
                 $cookTime = $recipe['oven_temp'];
                 $cookTime = $recipe['ingredients'];
                 $cookTime = $recipe['instructions'];
-                echo "<li><p><a href='recipetitViewRecipe.php?recipe_id=$recipe_id'>$name</p></li>";
+                echo "<li class="recipeNameView"><p><a href='recipetitViewRecipe.php?recipe_id=$recipe_id'>$name</p></li>";
                 
          
              }

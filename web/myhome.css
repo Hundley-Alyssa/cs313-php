@@ -146,6 +146,10 @@ form{
     font-size: 50px;
 }
 
+.recipeNameView{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+}
 
 footer {
     z-index: 2;
