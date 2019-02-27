@@ -135,6 +135,14 @@ a:active {
     font-size: 20px;
 }
 
+form{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+}
+
+.formInputs{
+    padding: 30px;
+}
 
 
 footer {

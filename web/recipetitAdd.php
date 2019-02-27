@@ -32,16 +32,16 @@
         <form method="post" action="insert_recipe.php">
             <!-- <input type="hidden" name="recipe_id" value="<?php echo $recipe_id; ?>"> -->
             Recipe Name:<br>
-            <input type="text" name="recipe_name"> 
+            <input class="formInputs" type="text" name="recipe_name"> 
             Cook Time:<br>
-            <input type="number" name="cooktime">
+            <input class="formInputs" type="number" name="cooktime">
             <br>
             Oven Temperature:<br>
-            <input type="number" name="oventemp">
+            <input class="formInputs" type="number" name="oventemp">
             Ingredients:<br>
-            <textarea name="ingredients"></textarea>
+            <textarea class="formInputs" name="ingredients"></textarea>
             Instructions:<br>
-            <textarea name="instructions"></textarea>
+            <textarea class="formInputs" name="instructions"></textarea>
 
             <input type="submit" value="Add Recipe">
         </form>

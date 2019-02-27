@@ -4,7 +4,7 @@
 
 <head>
 
-    <title>CS 313 | SHOPPING</title>
+    <title>CS 313 | HOME</title>
     <meta charset="utf-8" />
     <link href="myhome.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
