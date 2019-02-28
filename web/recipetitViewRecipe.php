@@ -59,10 +59,10 @@ $recipe_name = $recipe_rows[0]['name'];
                 $instructions = $recipe_row['instructions'];
 
 
-                echo"<p>$cook_time</p>";
-                echo"<p>$oven_temp</p>";
-                echo"<p>$ingredients</p>";
-                echo"<p>$instructions</p>";
+                echo"<p class='recipeDetails'>Cook Time: $cook_time</p>";
+                echo"<p class='recipeDetails'>Oven Temperature: $oven_temp</p>";
+                echo"<p class='recipeDetails'>Ingredients: $ingredients</p>";
+                echo"<p class='recipeDetails'>Instructions: $instructions</p>";
             }
 
             echo "<button><a href='recipetitEdit.php?recipe_id=$recipe_id'>Edit</a></button>";

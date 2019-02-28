@@ -154,8 +154,13 @@ form{
     background-color: #f7acbd;
     color: white;
     list-style: none;
-    padding-left: 20px;
+    padding-left: 50px;
 
+}
+
+.recipeDetails{
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding-left: 50px;
 }
 .recipeHeader{
     font-family: 'Open Sans Condensed', sans-serif;

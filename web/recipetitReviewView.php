@@ -57,8 +57,8 @@ $recipe_name = $review_rows[0]['name'];
                
 
 
-                echo"<p>$rating</p>";
-                echo"<p>$comments</p>";
+                echo"<p class='recipeDetails'>$rating</p>";
+                echo"<p class='recipeDetails'>$comments</p>";
               
             }
 
