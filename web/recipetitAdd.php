@@ -26,7 +26,7 @@
         </div>
         
 
-        <h1>Add New Recipe</h1>
+        <h1 class="recipeHeader">Add New Recipe</h1>
         <!-- <h2><?php echo $recipe_name;?></h2> -->
 
         <form method="post" action="insert_recipe.php">

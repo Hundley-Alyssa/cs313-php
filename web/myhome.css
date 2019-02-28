@@ -150,12 +150,16 @@ form{
 
 .recipeNameView{
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     background-color: #f7acbd;
     color: white;
     list-style: none;
-    padding: 10px;
+    padding-left: 20px;
 
+}
+.recipeHeader{
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding-left: 30px;
 }
 
 footer {
