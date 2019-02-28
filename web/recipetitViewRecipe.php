@@ -49,7 +49,7 @@ $recipe_name = $recipe_rows[0]['name'];
         
 
 
-        <h2 class="recipeHeader"><?php echo $recipe_name;?></h2>
+        <h1 class="recipeHeader"><?php echo $recipe_name;?></h1>
 
         <?php
             foreach($recipe_rows as $recipe_row){

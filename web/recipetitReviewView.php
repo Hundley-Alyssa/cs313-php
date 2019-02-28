@@ -48,7 +48,7 @@ $recipe_name = $review_rows[0]['name'];
         
 
 
-        <h2><?php echo $recipe_name;?></h2>
+        <h1><?php echo $recipe_name;?></h1>
 
         <?php
             foreach($review_rows as $review_row){
