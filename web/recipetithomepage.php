@@ -24,7 +24,7 @@
         </div>
 
 
-        
+        <h1 class="recipeHeader">Welcome to Recipetit! This is a place where you can create, save, and edit your own recipes.</h1>
 
     </main>
 
