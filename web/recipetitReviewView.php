@@ -48,7 +48,7 @@ $recipe_name = $review_rows[0]['name'];
         
 
 
-        <h1><?php echo $recipe_name;?></h1>
+        <h1 class="recipeHeader"><?php echo $recipe_name;?></h1>
 
         <?php
             foreach($review_rows as $review_row){
@@ -57,8 +57,8 @@ $recipe_name = $review_rows[0]['name'];
                
 
 
-                echo"<p class='recipeDetails'>$rating</p>";
-                echo"<p class='recipeDetails'>$comments</p>";
+                echo"<p class='recipeDetails'>Rating: $rating</p>";
+                echo"<p class='recipeDetails'>Comments: $comments</p>";
               
             }
 
