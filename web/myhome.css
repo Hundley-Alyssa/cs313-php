@@ -138,10 +138,12 @@ a:active {
 form{
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 25px;
+    padding: 30px;
+    padding-left: 50px;
 }
 
 .formInputs{
-    padding: 30px;
+    
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 25px;
 }
@@ -151,7 +153,8 @@ form{
     font-size: 30px;
     background-color: #f7acbd;
     color: white;
-    
+    list-style: none;
+
 }
 
 footer {
