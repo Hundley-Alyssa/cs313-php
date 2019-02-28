@@ -57,7 +57,7 @@ $recipe_name = $recipe_rows[0]['name'];
             Rating:<br>
             <input type="number" name="rating">
             <br>
-            <input type="submit" value="Submit Review">
+            <input class="submitButton" type="submit" value="Submit Review">
         </form>
         
 

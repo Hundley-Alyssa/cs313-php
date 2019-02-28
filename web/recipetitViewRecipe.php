@@ -65,8 +65,8 @@ $recipe_name = $recipe_rows[0]['name'];
                 echo"<p class='recipeDetails'>Instructions: $instructions</p>";
             }
 
-            echo "<button><a href='recipetitEdit.php?recipe_id=$recipe_id'>Edit</a></button>";
-            echo "<button><a href='recipetitReviewAdd.php?recipe_id=$recipe_id'>Add Review</a></button>";
+            echo "<button class='submitButton'><a href='recipetitEdit.php?recipe_id=$recipe_id'>Edit</a></button>";
+            echo "<button class='submitButton'><a href='recipetitReviewAdd.php?recipe_id=$recipe_id'>Add Review</a></button>";
 
         ?>
 
