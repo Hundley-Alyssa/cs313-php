@@ -157,7 +157,9 @@ form{
     padding-left: 50px;
 
 }
-
+ #editButton{
+    margin-left: 50px;
+ }
 .recipeDetails{
     font-family: 'Open Sans Condensed', sans-serif;
     padding-left: 50px;
