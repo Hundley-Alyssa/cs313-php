@@ -43,7 +43,7 @@
             Instructions:<br>
             <textarea class="formInputs" name="instructions"></textarea><br>
 
-            <input type="submit" value="Add Recipe">
+            <input class="submitButton" type="submit" value="Add Recipe">
         </form>
 
         

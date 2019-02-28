@@ -34,7 +34,7 @@ $recipes = $stmt->fetchALL(PDO::FETCH_ASSOC);
             <?php include ("recipetitnav.php"); ?> 
         </div>
 
-        <h2>Click on a recipe name to view full recipe</h2>
+        <h2 class="recipeHeader">Click on a recipe name to view full recipe</h2>
         
 
         <?php

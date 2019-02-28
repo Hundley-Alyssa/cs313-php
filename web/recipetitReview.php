@@ -52,7 +52,7 @@ $reviews = $stmt->fetchALL(PDO::FETCH_ASSOC);
                 $review_id = $review['id'];
                 $name = $review['name'];
               
-                echo "<li><p><a href='recipetitReviewView.php?review_id=$review_id'>$name</p></li>";
+                echo "<li class='recipeNameView'><p><a href='recipetitReviewView.php?review_id=$review_id'>$name</p></li>";
                 
          
              }
