@@ -53,24 +53,24 @@ $instructions = $recipe_rows[0]['instructions'];
             <?php include ("recipetitnav.php"); ?> 
         </div>
 
-
+        <h1 class="recipeHeader">Update Recipe</h1>
 
 
        <form method="post" action="update_recipe.php">
-            <input type="hidden" name="recipe_id" value="<?php echo $recipe_id; ?>">
+            <input class="formInputs" type="hidden" name="recipe_id" value="<?php echo $recipe_id; ?>">
             Recipe Name:<br>
-            <input type="text" name="recipe_name" value="<?php echo $recipe_name;?>"> 
+            <input class="formInputs" type="text" name="recipe_name" value="<?php echo $recipe_name;?>"><br>
             Cook Time:<br>
-            <input type="number" name="cooktime" value="<?php echo $cooktime;?>">
+            <input class="formInputs" type="number" name="cooktime" value="<?php echo $cooktime;?>">
             <br>
             Oven Temperature:<br>
-            <input type="number" name="oventemp" value="<?php echo $oventemp;?>">
+            <input class="formInputs" type="number" name="oventemp" value="<?php echo $oventemp;?>"><br>
             Ingredients:<br>
-            <input name="ingredients" value="<?php echo $ingredients;?>">
+            <input class="formInputs" name="ingredients" value="<?php echo $ingredients;?>"><br>
             Instructions:<br>
-            <input name="instructions" value="<?php echo $instructions;?>">
+            <input class="formInputs" name="instructions" value="<?php echo $instructions;?>"><br>
 
-            <input type="submit" value="Update Recipe">
+            <input class="submitButton" type="submit" value="Update Recipe">
         </form>
 
         
