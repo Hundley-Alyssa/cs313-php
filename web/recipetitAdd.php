@@ -26,7 +26,7 @@
         </div>
         
 
-
+        <h1>Add New Recipe</h1>
         <!-- <h2><?php echo $recipe_name;?></h2> -->
 
         <form method="post" action="insert_recipe.php">
@@ -41,7 +41,7 @@
             Ingredients:<br>
             <textarea class="formInputs" name="ingredients"></textarea><br>
             Instructions:<br>
-            <textarea class="formInputs" name="instructions"></textarea>
+            <textarea class="formInputs" name="instructions"></textarea><br>
 
             <input type="submit" value="Add Recipe">
         </form>
